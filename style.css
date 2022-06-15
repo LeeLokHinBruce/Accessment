@@ -1,31 +1,63 @@
-:root{
+:root {
     --dark-gray-color: #343a40;
+    --pure-gray-color: rgb(120, 120, 120);
 }
 
-.container-fluid{
-    padding: 32px 24px;
+[class*="col-"] {
+    margin: 0;
+    padding: 0;
 }
 
-.navbar{
+[class*="row-"] {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
     padding: 5px 24px;
 }
 
-.nav-item{
+.nav-item {
     padding-left: 16px;
 }
 
-h1, p{
+h1,
+p,
+h3,
+.card-body {
     color: var(--dark-gray-color);
-    padding: 12px 0;
 }
 
-#main-section{
+#main-section {
     background-color: rgb(197, 192, 192);
 }
 
-#start{
+#start {
     width: 100%;
-    font-size: 24px;
+    font-size: 26px;
     border: none;
     padding: 8px 0;
+}
+
+#card-section {
+    padding: 16px 56px;
+    background-color: rgb(211, 211, 211);
+}
+
+.card {
+    margin: 16px;
+}
+
+.card-body {
+    padding: 16px 16px 24px;
+}
+
+.course,
+.card-text,
+.gray-text-p {
+    color: var(--pure-gray-color);
+}
+
+.gray-img {
+    background-color: rgb(211, 211, 211);
 }
