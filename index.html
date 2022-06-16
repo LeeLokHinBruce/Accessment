@@ -16,16 +16,29 @@
 
 <body>
     <!-- start of Navbar -->
-    <nav class="navbar navbar-expand-lg">
+
+    <!-- smart phone navbar -->
+    <nav class="navbar d-flex justify-content-around smartphone-platform" style="padding: 16px;">
+        <img src="./images/ic-logo.svg" alt="colmar academy" width="10%">
+        <img src="./images/ic-on-campus.svg" alt="compus" width="10%">
+        <img src="./images/ic-online.svg" alt="online" width="10%">
+        <img src="./images/ic-login.svg" alt="login" width="10%">
+    </nav>
+    <!-- smart phone navbar -->
+
+    <!-- desktop navbar -->
+    <nav class="navbar navbar-expand-lg desktop-platform">
 
         <a href="#" class="navbar-brand" style="font-family: 'Montserrat', sans-serif;"
             style="font-size: 32px; font-weight: 500;">
             <img src="./images/ic-logo.svg" alt="colmar academy" style="width: 18%">
-            <strong class="text-dark">COLMAR</strong><strong class="text-secondary">ACADEMY</strong>
+            <span id="brand-name">
+                <strong class="text-dark">COLMAR</strong><strong class="text-secondary">ACADEMY</strong>
+            </span>
         </a>
 
-        <div class="ml-auto">
-            <ul class="navbar-nav mr-auto " style="font-weight: 500;">
+        <div class="float-right my-auto">
+            <ul class=" navbar-nav mr-auto " style=" font-weight: 500;">
                 <li class="nav-item">
                     <a href="#" class="nav-link text-dark">On campus</a>
                 </li>
@@ -40,21 +53,23 @@
                 </li>
             </ul>
         </div>
+        <!-- desktop navbar -->
 
     </nav>
     <!-- end of Navbar -->
 
     <!-- start of main section -->
     <section class="container-fluid" id="main-section">
+
         <div class="row">
-            <div class="col-6" style="margin: 32px 24px;">
+            <div id="main-img" class="col-md-6 col-sm-12">
                 <img src="./images/banner.jpg" alt="banner" width="100%">
             </div>
-            <div class="col-4 my-auto" style="margin: 32px 24px;">
+            <div id="main-body" class="col-md-4 col-sm-10 my-auto">
                 <h1 class="display-4 font-weight-bold">Learn something new everyday</h1>
-                <p class="font-weight-bold" style="font-size: 30px">Lorem ipsum dolor sit amet, consectetur
+                <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit.</p>
-                <button class="bg-dark text-white" id="start">Start here</button>
+                <button class="bg-dark text-white" id="start-btn">Start here</button>
             </div>
         </div>
     </section>
@@ -62,7 +77,7 @@
 
     <!-- start of second section -->
     <section class="container-fluid" id="second-section">
-        <div class="row">
+        <div class="row desktop-platform">
             <div class="col-6" style="margin: 32px 24px;">
                 <img src="./images/information-main.jpg" alt="info-main" width="100%">
                 <h1 class="display-4 font-weight-bold"
@@ -91,7 +106,7 @@
                 </div>
                 <div class="row border-top border-left">
                     <div class="col-4" style="margin: 16px;">
-                        <img src="./images/information-campus.jpg" alt="info-orientation" width="100%" height="auto">
+                        <img src="./images/information-campus.jpg" alt="info-campus" width="100%" height="auto">
                     </div>
                     <div class="col-7 align-self-center">
                         <h3>Our campus</h3>
@@ -101,7 +116,7 @@
                 </div>
                 <div class="row border-left gray-img">
                     <div class="col-4" style="margin: 16px;">
-                        <img src="./images/information-guest-lecture.jpg" alt="info-orientation" width="100%"
+                        <img src="./images/information-guest-lecture.jpg" alt="info-guest-lecture" width="100%"
                             height="auto">
                     </div>
                     <div class="col-7 align-self-center">
@@ -112,6 +127,44 @@
                 </div>
             </div>
         </div>
+
+        <!-- smartphone -->
+        <div class="smartphone-platform" style="margin: 16px 16px 32px">
+            <div class="row">
+                <div class="col-sm-10">
+                    <img src="./images/information-orientation-mobile.jpg" alt="info-orientation-mobile" width="100%"
+                        height="auto">
+                </div>
+                <div class="col-sm-10" style="margin: 16px">
+                    <h3>Orientation date</h3>
+                    <p style="padding: 8px 0;">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <a href="#" style="text-decoration: none;">Read more</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <img src="./images/information-campus-mobile.jpg" alt="info-campus-mobile" width="100%"
+                        height="auto">
+                </div>
+                <div class="col-sm-10" style="margin: 16px">
+                    <h3>Orientation date</h3>
+                    <p style="padding: 8px 0;">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <a href="#" style="text-decoration: none;">Read more</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <img src="./images/information-guest-lecture-mobile.jpg" alt="info-guest-lecture-mobile"
+                        width="100%" height="auto">
+                </div>
+                <div class="col-sm-10" style="margin: 16px">
+                    <h3>Orientation date</h3>
+                    <p style="padding: 8px 0;">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <a href="#" style="text-decoration: none;">Read more</a>
+                </div>
+            </div>
+        </div>
+        <!-- smartphone -->
     </section>
     <!-- end of second section -->
 
@@ -188,9 +241,9 @@
 
     <!-- start of thesis section -->
     <section class="container-fluid" id="thesis">
-        <h1 class="font-weight-bold text-center" style="padding: 32px">Thesis exhibit</h1>
+        <h1 class="font-weight-bold text-center" style="padding: 32px">Thesis exhibits</h1>
         <div class="row" style="margin-bottom: 32px;">
-            <div class="col-7" style="margin: 0 44px;">
+            <div class="col-7 desktop-platform" style="margin: 0 44px;">
                 <div class="row">
                     <div class="col-12">
                         <video width="100%" controls>
@@ -210,7 +263,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-12">
+                <video width="100%" controls>
+                    <source src="./videos/thesis.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-4 desktop-platform">
                 <div class="row gray-img">
                     <div class="col-4" style="margin: 16px;">
                         <img src="./images/thesis-fisma.jpg" alt="fisma" width="100%" height="auto">
@@ -235,11 +293,11 @@
     <!-- end of thesis section -->
 
     <footer>
-        <hr>
-        <div class="d-flex justify-content-between gray-text-p" style="padding: 16px 24px;">
+        <hr class="desktop-platform">
+        <div id="footer-text" class="d-flex justify-content-between gray-text-p">
             <span>&copy 2016 Colmar Academy.
                 All rights reserved</span>
-            <span>Terms Privacy</span>
+            <span class="desktop-platform">Terms Privacy</span>
         </div>
     </footer>
 
