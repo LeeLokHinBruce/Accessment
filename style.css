@@ -3,12 +3,12 @@
     --pure-gray-color: rgb(120, 120, 120);
 }
 
-[class*="col-"] {
+[class*="col"] {
     margin: 0;
     padding: 0;
 }
 
-[class*="row-"] {
+[class*="row"] {
     margin: 0;
     padding: 0;
 }
@@ -32,16 +32,15 @@ h3,
     background-color: rgb(197, 192, 192);
 }
 
+#main-body p {
+    padding: 32px 0 24px;
+}
+
 #start-btn {
     width: 100%;
     font-size: 26px;
     border: none;
     padding: 8px 0;
-}
-
-#card-section {
-    padding: 16px 56px;
-    background-color: rgb(211, 211, 211);
 }
 
 .card {
@@ -62,14 +61,7 @@ h3,
     background-color: rgb(211, 211, 211);
 }
 
-@media only screen and (min-width: 426px) and (max-width: 1480px) {
-    .smartphone-platform {
-        display: none !important;
-    }
-
-    .desktop-platform {
-        display: block;
-    }
+@media only screen and (min-width: 770px) and (max-width: 1480px) {
 
     #main-img {
         margin: 32px 24px;
@@ -79,30 +71,44 @@ h3,
         padding: 32px 24px;
     }
 
+    #main-body h1 {
+        font-size: 45px;
+    }
+
     #main-body p {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     #footer-text {
         padding: 16px 24px;
     }
+
+    #thesis h1 {
+        padding: 32px;
+    }
+
+    #card-section {
+        padding: 16px 56px;
+        background-color: rgb(211, 211, 211);
+    }
+
+    #card-section h1 {
+        padding: 16px 0;
+    }
+
+    .card {
+        height: 90%;
+        margin: 16px;
+    }
 }
 
-@media only screen and (max-width: 425px) {
-    .smartphone-platform {
-        display: block;
-    }
-
-    .desktop-platform {
-        display: none;
-    }
+@media only screen and (max-width: 769px) {
 
     #main-body {
         padding: 32px 16px;
     }
 
     #main-body p {
-        padding: 32px 0 24px;
         font-size: 24px;
     }
 
@@ -112,5 +118,13 @@ h3,
 
     #footer-text {
         padding: 16px;
+    }
+
+    #thesis h1 {
+        padding: 32px 0 16px;
+    }
+
+    #card-section {
+        background-color: white;
     }
 }

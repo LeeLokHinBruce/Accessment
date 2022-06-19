@@ -18,7 +18,7 @@
     <!-- start of Navbar -->
 
     <!-- smart phone navbar -->
-    <nav class="navbar d-flex justify-content-around smartphone-platform" style="padding: 16px;">
+    <nav class="navbar d-sm-flex justify-content-around d-md-none" style="padding: 16px;">
         <img src="./images/ic-logo.svg" alt="colmar academy" width="10%">
         <img src="./images/ic-on-campus.svg" alt="compus" width="10%">
         <img src="./images/ic-online.svg" alt="online" width="10%">
@@ -27,7 +27,7 @@
     <!-- smart phone navbar -->
 
     <!-- desktop navbar -->
-    <nav class="navbar navbar-expand-lg desktop-platform">
+    <nav class="navbar navbar-expand-lg d-none d-md-flex justify-content-between">
 
         <a href="#" class="navbar-brand" style="font-family: 'Montserrat', sans-serif;"
             style="font-size: 32px; font-weight: 500;">
@@ -37,7 +37,7 @@
             </span>
         </a>
 
-        <div class="float-right my-auto">
+        <div>
             <ul class=" navbar-nav mr-auto " style=" font-weight: 500;">
                 <li class="nav-item">
                     <a href="#" class="nav-link text-dark">On campus</a>
@@ -53,20 +53,21 @@
                 </li>
             </ul>
         </div>
-        <!-- desktop navbar -->
 
     </nav>
+    <!-- desktop navbar -->
+
     <!-- end of Navbar -->
 
     <!-- start of main section -->
     <section class="container-fluid" id="main-section">
 
         <div class="row">
-            <div id="main-img" class="col-md-6 col-sm-12">
+            <div id="main-img" class="col-md-7 col-sm-12">
                 <img src="./images/banner.jpg" alt="banner" width="100%">
             </div>
             <div id="main-body" class="col-md-4 col-sm-10 my-auto">
-                <h1 class="display-4 font-weight-bold">Learn something new everyday</h1>
+                <h1 class="font-weight-bold">Learn something new everyday</h1>
                 <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit.</p>
                 <button class="bg-dark text-white" id="start-btn">Start here</button>
@@ -77,22 +78,24 @@
 
     <!-- start of second section -->
     <section class="container-fluid" id="second-section">
-        <div class="row desktop-platform">
-            <div class="col-6" style="margin: 32px 24px;">
-                <img src="./images/information-main.jpg" alt="info-main" width="100%">
-                <h1 class="display-4 font-weight-bold"
-                    style="margin: 0; padding: 0; padding-top: 32px; font-size: 40px;">It doesn't hurt
-                    to keep practicing
-                </h1>
-                <p style="font-size: 20px; padding-top: 24px;">"Curabitur vitae libero in ipsum porttitor consequat.
-                    Aliquam et commodo lectus, nec conseuat neque. Sed non accumsan urna. Phasellus sed consequat ex.
-                    Etiam
-                    eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-                <!-- modify align-self-end -->
-                <span class=" align-self-end" style="font-size: 23px;">Emanuel, Sr Stretegist at
-                    Hiring.com</span>
+        <div class="row d-md-flex d-none d-sm-none">
+            <div class="col-md-7" style="margin-bottom: 24px;">
+                <img src="./images/information-main.jpg" alt="info-main" width="100%" style="padding: 32px 24px;">
+                <div style="margin-left: 24px;">
+                    <h1 class="display-4 font-weight-bold" style="font-size: 40px;">It doesn't hurt
+                        to keep practicing
+                    </h1>
+                    <p style="font-size: 20px; padding-top: 24px;">"Curabitur vitae libero in ipsum porttitor consequat.
+                        Aliquam et commodo lectus, nec conseuat neque. Sed non accumsan urna. Phasellus sed consequat
+                        ex.
+                        Etiam
+                        eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                    <!-- modify align-self-end -->
+                    <span class=" align-self-end" style="font-size: 23px;">Emanuel, Sr Stretegist at
+                        Hiring.com</span>
+                </div>
             </div>
-            <div class="col-5" style="margin: 32px 0">
+            <div class="col-md-5" style="margin: 32px 0">
                 <div class="row border-bottom border-left">
                     <div class="col-4" style="margin: 16px;">
                         <img src="./images/information-orientation.jpg" alt="info-orientation" width="100%"
@@ -129,7 +132,7 @@
         </div>
 
         <!-- smartphone -->
-        <div class="smartphone-platform" style="margin: 16px 16px 32px">
+        <div class="d-sm-block d-md-none" style="margin: 16px 16px 32px">
             <div class="row">
                 <div class="col-sm-10">
                     <img src="./images/information-orientation-mobile.jpg" alt="info-orientation-mobile" width="100%"
@@ -168,68 +171,194 @@
     </section>
     <!-- end of second section -->
 
+    <hr class="d-md-none d-block">
+
     <!-- start of card section -->
     <section class="container-fluid" id="card-section">
-        <h1 class="font-weight-bold text-center" style="padding: 16px;">Start learning</h1>
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="./images/course-software.jpg" alt="software" height="auto">
+        <div class="d-md-block d-none">
+            <h1 class="font-weight-bold text-center">Start learning</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/course-software.jpg" alt="software" height="auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Software engineering</h5>
+                            <span class="course" style="padding: 8px 0;">COURSES</span>
+                            <p class="card-text">Web Development, Mobile Development , iOT, APIs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/course-computer-art.jpg" alt="computer-art"
+                            height="auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer art</h5>
+                            <span class="course" style="padding: 8px 0;">COURSES</span>
+                            <p class="card-text">Imaging & Design , Web Design, Motion Graphics & Visual Effects,
+                                Computer
+                                Animation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/course-design.jpg" alt="design" height="auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Design</h5>
+                            <span class="course" style="padding: 8px 0;">COURSES</span>
+                            <p class="card-text">User Experience Design, User Research, Visual Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/course-data.jpg" alt="data" height="auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Data</h5>
+                            <span class="course" style="padding: 8px 0;">COURSES</span>
+                            <p class="card-text">Data Science, Big Data, SQL, Data Visualization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/course-business.jpg" alt="business" height="auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Business</h5>
+                            <span class="course" style="padding: 8px 0;">COURSES</span>
+                            <p class="card-text">Product Development, Business, Development, Startup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/course-marketing.jpg" alt="marketing" height="auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing</h5>
+                            <span class="course" style="padding: 8px 0;">COURSES</span>
+                            <p class="card-text">Analysis, Content Marketing, Moblile Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- smartphone -->
+        <div class="accordion d-md-none d-block" id="accordionExample1">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="false" aria-controls="collapseOne">
+                            Software engineering
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample1">
                     <div class="card-body">
-                        <h5 class="card-title">Software engineenring</h5>
+                        <img class="card-img-top" src="./images/course-software.jpg" alt="software" height="auto">
                         <span class="course" style="padding: 8px 0;">COURSES</span>
                         <p class="card-text">Web Development, Mobile Development , iOT, APIs</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="./images/course-computer-art.jpg" alt="computer-art" height="auto">
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Computer art
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample1">
                     <div class="card-body">
-                        <h5 class="card-title">Computer art</h5>
+                        <img class="card-img-top" src="./images/course-computer-art.jpg" alt="computer-art"
+                            height="auto">
                         <span class="course" style="padding: 8px 0;">COURSES</span>
                         <p class="card-text">Imaging & Design , Web Design, Motion Graphics & Visual Effects, Computer
                             Animation</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="./images/course-design.jpg" alt="design" height="auto">
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Design
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordionExample1">
                     <div class="card-body">
-                        <h5 class="card-title">Design</h5>
+                        <img class="card-img-top" src="./images/course-design.jpg" alt="design" height="auto">
                         <span class="course" style="padding: 8px 0;">COURSES</span>
                         <p class="card-text">User Experience Design, User Research, Visual Design</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="./images/course-data.jpg" alt="data" height="auto">
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            Data
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample1">
                     <div class="card-body">
-                        <h5 class="card-title">Data</h5>
+                        <img class="card-img-top" src="./images/course-data.jpg" alt="data" height="auto">
                         <span class="course" style="padding: 8px 0;">COURSES</span>
                         <p class="card-text">Data Science, Big Data, SQL, Data Visualization</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="./images/course-business.jpg" alt="business" height="auto">
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            Business
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample1">
                     <div class="card-body">
-                        <h5 class="card-title">Business</h5>
+                        <img class="card-img-top" src="./images/course-business.jpg" alt="business" height="auto">
                         <span class="course" style="padding: 8px 0;">COURSES</span>
                         <p class="card-text">Product Development, Business, Development, Startup</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="./images/course-marketing.jpg" alt="marketing" height="auto">
+
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                            Marketing
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample1">
                     <div class="card-body">
-                        <h5 class="card-title">Marketing</h5>
+                        <img class="card-img-top" src="./images/course-marketing.jpg" alt="marketing" height="auto">
                         <span class="course" style="padding: 8px 0;">COURSES</span>
                         <p class="card-text">Analysis, Content Marketing, Moblile Marketing</p>
                     </div>
@@ -239,18 +368,20 @@
     </section>
     <!-- end of card section -->
 
+    <hr class="d-md-block d-none">
+
     <!-- start of thesis section -->
-    <section class="container-fluid" id="thesis">
-        <h1 class="font-weight-bold text-center" style="padding: 32px">Thesis exhibits</h1>
+    <section class="container-fluid" style="padding-left: 0; padding-right: 0;" id="thesis">
+        <h1 class="font-weight-bold text-center">Thesis exhibits</h1>
         <div class="row" style="margin-bottom: 32px;">
-            <div class="col-7 desktop-platform" style="margin: 0 44px;">
+            <div class="col-md-7 d-md-block d-none">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" style="padding: 0 24px 24px;">
                         <video width="100%" controls>
                             <source src="./videos/thesis.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="col-11">
+                    <div class="col-11" style="margin-left: 24px">
                         <h3 class="font-weight-bold" style="padding-top: 24px;">Reimagine urban</h3>
                         <p class="gray-text-p" style="font-size: 20px; padding-top: 8px;">"Curabitur vitae libero in
                             ipsum porttitor
@@ -263,12 +394,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12 d-block d-md-none" style="margin-bottom: 24px;">
                 <video width="100%" controls>
                     <source src="./videos/thesis.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="col-4 desktop-platform">
+            <div class="col-md-5 d-md-block d-none">
                 <div class="row gray-img">
                     <div class="col-4" style="margin: 16px;">
                         <img src="./images/thesis-fisma.jpg" alt="fisma" width="100%" height="auto">
@@ -293,11 +424,14 @@
     <!-- end of thesis section -->
 
     <footer>
-        <hr class="desktop-platform">
+        <hr class="d-md-block d--none">
         <div id="footer-text" class="d-flex justify-content-between gray-text-p">
             <span>&copy 2016 Colmar Academy.
                 All rights reserved</span>
-            <span class="desktop-platform">Terms Privacy</span>
+            <span class="d-md-block d-sm-none">
+                Terms
+                Privacy
+            </span>
         </div>
     </footer>
 
